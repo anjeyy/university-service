@@ -1,0 +1,29 @@
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+      probes:
+        enabled: false
+      access: read_only
+  health:
+    rabbit:
+      enabled: true
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/university-service
+      database: university-service
+      auto-index-creation: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  shutdown: graceful
+  port: 8080

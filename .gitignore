@@ -1,0 +1,19 @@
+target/
+.developmentconfigurations/checkstyle-8.36.2-all.jar
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+pom.xml.versionsBackup
+**/.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+*.tdd
+.env
+/.project
+/.settings/
+/.classpath
